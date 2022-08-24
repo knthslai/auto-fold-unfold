@@ -1,7 +1,7 @@
 import { commands, window, Selection, StatusBarAlignment } from "vscode";
 
 async function foldLevels() {
-  for (let level = 7; level > 0; --level) {
+  for (let level = 7; level > 6; --level) {
     commands.executeCommand(`editor.foldLevel${level}`);
   }
 }
